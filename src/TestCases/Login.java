@@ -25,6 +25,13 @@ public class Login {
 		
 	}
 	
+	public void main() {
+		WebDriver driver = new ChromeDriver();
+		RediffHomePage rH = new RediffHomePage(driver);
+		rH.SearchBox().sendKeys("Rediff");
+		rH.SearchButton().click();
+	}
+	
 	
 
 }
